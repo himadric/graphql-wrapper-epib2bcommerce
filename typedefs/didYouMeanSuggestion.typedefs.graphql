@@ -1,0 +1,5 @@
+    type DidYouMeanSuggestion {
+      highlightedSuggestion: String,
+      score: Int,
+      suggestion: String
+    }

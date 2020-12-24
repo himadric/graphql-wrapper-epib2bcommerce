@@ -1,0 +1,7 @@
+type AttributeTypeFacet {
+    attributeTypeId: ID,
+    name: String,
+    nameDisplay: String,
+    sort: Int,
+    attributeValueFacets: [AttributeValueFacet]
+}

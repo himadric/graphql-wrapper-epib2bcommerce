@@ -1,0 +1,9 @@
+type Warehouse {
+    messageType: Int,
+    message: String,
+    requiresRealTimeInventory: Boolean,
+    name: String,
+    description: String,
+    qty: Int,
+    properties: [Property]
+}

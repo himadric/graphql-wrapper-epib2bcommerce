@@ -1,0 +1,8 @@
+type AttributeValueFacet {
+    attributeValueId: ID,
+    value: String,
+    valueDisplay: String,
+    count: Int,
+    sortOrder: Int,
+    selected: Boolean
+}

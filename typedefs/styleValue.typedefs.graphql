@@ -1,0 +1,9 @@
+type StyleValue {
+    styleTraitName: String,
+    styleTraitId: ID,
+    styleTraitValueId: ID,
+    value: String,
+    valueDisplay: String,
+    sortOrder: Int,
+    isDefault: Boolean
+}

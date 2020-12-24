@@ -1,0 +1,21 @@
+type ProductSubscription {
+    subscriptionAddToInitialOrder: Boolean,
+    subscriptionAllMonths: Boolean,
+    subscriptionApril: Boolean,
+    subscriptionAugust: Boolean,
+    subscriptionCyclePeriod: String,
+    subscriptionDecember: Boolean,
+    subscriptionFebruary: Boolean,
+    subscriptionFixedPrice: Boolean,
+    subscriptionJanuary: Boolean,
+    subscriptionJuly: Boolean,
+    subscriptionJune: Boolean,
+    subscriptionMarch: Boolean,
+    subscriptionMay: Boolean,
+    subscriptionNovember: Boolean,
+    subscriptionOctober: Boolean,
+    subscriptionPeriodsPerCycle: Int,
+    subscriptionSeptember: Boolean,
+    subscriptionShipViaId: ID,
+    subscriptionTotalCycles: Int
+}

@@ -1,0 +1,6 @@
+type PriceRange {
+    minimumPrice: Int,
+    maximumPrice: Int,
+    count: Int,
+    priceFacets: [PriceFacet]
+}

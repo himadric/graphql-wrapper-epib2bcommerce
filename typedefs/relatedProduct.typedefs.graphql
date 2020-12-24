@@ -1,0 +1,8 @@
+type RelatedProduct {
+    relatedProductType: String,
+    productDto: ProductDto
+}
+
+type ProductDto {
+    dummy: String
+}

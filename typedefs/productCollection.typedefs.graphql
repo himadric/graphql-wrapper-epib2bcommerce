@@ -1,0 +1,22 @@
+type ProductCollection {
+    uri: String,
+    pagination: Pagination,
+    products: [Product],
+    categoryFacets: [CategoryFacetDto],
+    attributeTypeFacets: [AttributeTypeFacet],
+    brandFacets: [BrandFacet],
+    productLineFacets: [ProductLineFacet],
+    didYouMeanSuggestions: [DidYouMeanSuggestion],
+    priceRange: PriceRange,
+    exactMatch: Boolean,
+    notAllProductsFound: Boolean,
+    notAllProductsAllowed: Boolean,
+    originalQuery: String,
+    correctedQuery: String,
+    searchTermRedirectUrl: String,
+    properties: [Property]
+}
+
+type Query {
+    productCollection(categoryId: String, query: String, page: Int, pagesize: Int, sortType: String, expand: String): ProductCollection
+}

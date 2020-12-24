@@ -1,0 +1,44 @@
+type Pricing {
+    productId: ID,
+    isOnSale: Boolean,
+    requiresRealTimePrice: Boolean,
+    additionalResults: AdditionalResults,
+    unitCost: Float,
+    unitCostDisplay: String,
+    unitListPrice: Float,
+    unitListPriceDisplay: String,
+    extendedUnitListPrice: Float,
+    extendedUnitListPriceDisplay: String,
+    unitRegularPrice: Float,
+    unitRegularPriceDisplay: String,
+    extendedUnitRegularPrice: Float,
+    extendedUnitRegularPriceDisplay: String,
+    unitNetPrice: Float,
+    unitNetPriceDisplay: String,
+    extendedUnitNetPrice: Float,
+    extendedUnitNetPriceDisplay: String,
+    unitOfMeasure: String,
+    unitListBreakPrices: [BreakPrice],
+    unitRegularBreakPrices: [BreakPrice],
+    regularPrice: Float,
+    regularPriceDisplay: String,
+    extendedRegularPrice: Float,
+    extendedRegularPriceDisplay: String,
+    actualPrice: Float,
+    actualPriceDisplay: String,
+    extendedActualPrice: Float,
+    extendedActualPriceDisplay: String,
+    regularBreakPrices: [BreakPrice],
+    actualBreakPrices: [BreakPrice]
+}
+
+type AdditionalResults {
+    dummy: String
+}
+
+type BreakPrice {
+    breakQty: Int,
+    breakPrice: Float,
+    breakPriceDisplay: String,
+    savingsMessage: String
+}

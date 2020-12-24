@@ -1,0 +1,8 @@
+type CategoryFacetDto {
+    categoryId: ID,
+    websiteId: ID,
+    shortDescription: String,
+    count: Int,
+    selected: Boolean,
+    subCategoryDtos: [CategoryFacetDto]
+}

@@ -1,0 +1,7 @@
+type AttributeValue {
+    id: ID,
+    value: String,
+    valueDisplay: String,
+    sortOrder: Int,
+    isActive: Boolean
+}

@@ -1,0 +1,6 @@
+type ProductLineFacet {
+    id: ID,
+    name: String,
+    count: Int,
+    selected: Boolean
+}

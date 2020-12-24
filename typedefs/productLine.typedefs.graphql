@@ -1,0 +1,4 @@
+type ProductLine {
+    id: ID,
+    name: String
+}

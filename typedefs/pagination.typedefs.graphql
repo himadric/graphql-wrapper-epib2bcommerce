@@ -1,0 +1,18 @@
+type Pagination {
+    currentPage: Int,
+    page: Int,
+    pageSize: Int,
+    defaultPageSize: Int,
+    totalItemCount: Int,
+    numberOfPages: Int,
+    pageSizeOptions: [Int],
+    sortOptions: [SortOption],
+    sortType: String,
+    nextPageUri: String,
+    prevPageUri: String
+}
+
+type SortOption{
+    displayName: String,
+    sortType: String
+}

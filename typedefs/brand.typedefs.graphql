@@ -1,0 +1,9 @@
+type Brand {
+    id: ID,
+    name: String,
+    urlSegment: String,
+    logoSmallImagePath: String,
+    logoLargeImagePath: String,
+    logoImageAltText: String,
+    detailPagePath: String
+}

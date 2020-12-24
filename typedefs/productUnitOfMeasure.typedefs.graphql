@@ -1,0 +1,10 @@
+type ProductUnitOfMeasure {
+    productUnitOfMeasureId: ID,
+    unitOfMeasure: String,
+    unitOfMeasureDisplay: String,
+    description: String,
+    qtyPerBaseUnitOfMeasure: Int,
+    roundingRule: String,
+    isDefault: Boolean,
+    availability: Availability
+}

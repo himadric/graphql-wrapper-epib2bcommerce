@@ -1,0 +1,12 @@
+type AttributeType {
+    id: ID,
+    name: String,
+    label: String,
+    isFilter: Boolean,
+    isComparable: Boolean,
+    isSearchable: Boolean,
+    includeOnProduct: Boolean,
+    isActive: Boolean,
+    sortOrder: Int,
+    attributeValues: [AttributeValue]
+}

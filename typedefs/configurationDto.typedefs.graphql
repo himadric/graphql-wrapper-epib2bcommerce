@@ -1,0 +1,23 @@
+type ConfigurationDto {
+    sections: [Section],
+    hasDefaults: Boolean,
+    isKit: Boolean
+}
+
+type Option {
+    sectionOptionId: ID,
+    sectionName: String,
+    productName: String,
+    productId: ID,
+    description: String,
+    price: Int,
+    userProductPrice: Boolean,
+    selected: Boolean,
+    sortOrder: Int,
+    quantity: Int
+}
+
+type Section {
+    sectionName: String,
+    options: [Option]
+}

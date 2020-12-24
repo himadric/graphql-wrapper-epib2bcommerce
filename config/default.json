@@ -1,0 +1,8 @@
+{
+    "RestApi": {
+        "baseUrl": "https://nishtech.insitesandbox.com"
+    },
+    "graphqlServer": {
+        "port": 4000
+    }
+}

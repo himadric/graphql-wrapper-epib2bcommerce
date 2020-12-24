@@ -1,0 +1,20 @@
+type ScoreExplanation {
+    totalBoost: Int,
+    aggregateFieldScores: [AggregateFieldScore],
+    detailedFieldScores: [DetailedFieldScore]
+}
+
+type AggregateFieldScore {
+    name: String,
+    score: Int
+}
+
+type DetailedFieldScore {
+    name: String,
+    score: Int,
+    boost: Int,
+    matchText: String,
+    termFrequencyNormalized: Int,
+    inverseDocumentFrequency: Int,
+    scoreUsed: Boolean
+}

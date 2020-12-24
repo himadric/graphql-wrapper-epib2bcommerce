@@ -1,0 +1,6 @@
+type BrandFacet {
+    id: ID,
+    name: String,
+    count: Int,
+    selected: Boolean
+}

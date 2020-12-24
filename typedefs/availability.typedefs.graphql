@@ -1,0 +1,5 @@
+type Availability {
+    messageType: Int,
+    message: String,
+    requiresRealTimeInventory: Boolean
+}

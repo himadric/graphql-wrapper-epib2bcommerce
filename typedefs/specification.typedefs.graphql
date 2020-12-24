@@ -1,0 +1,12 @@
+type Specification {
+    specificationId: ID,
+    name: String,
+    nameDisplay: String,
+    value: String,
+    description: String,
+    sortOrder: Int,
+    isActive: Boolean,
+    parentSpecification: Specification,
+    htmlContent: String,
+    specifications: [Specification]
+}

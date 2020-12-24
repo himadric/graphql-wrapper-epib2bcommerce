@@ -1,0 +1,10 @@
+type ProductImage {
+    id: ID,
+    sortOrder: Int,
+    name: String,
+    imageType: String,
+    smallImagePath: String,
+    mediumImagePath: String,
+    largeImagePath: String,
+    altText: String
+}

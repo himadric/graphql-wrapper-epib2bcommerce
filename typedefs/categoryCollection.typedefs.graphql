@@ -1,0 +1,8 @@
+type CategoryCollection {
+    uri: String,
+    categories: [Category]
+}
+
+type Query {
+    categoryCollection(maxdepth: Int, startCategoryId: String, includeStartCategory: Boolean): CategoryCollection
+}

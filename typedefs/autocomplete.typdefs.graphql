@@ -1,0 +1,62 @@
+type AutoComplete {
+  uri: String,
+  categories: [AutocompleteCategory],
+  products: [AutocompleteProduct],
+  content: [AutocompleteContent],
+  brands: [AutocompleteBrand],
+  properties: [Property]
+}
+
+type AutocompleteCategory {
+    uri: String,
+    id: ID,
+    image: String,
+    subtitle: String,
+    title: String,
+    url: String,
+    properties: [Property]
+}
+
+type AutocompleteProduct {
+    uri: String,
+    manufacturerItemNumber: String,
+    name: String,
+    isNameCustomerOverride: Boolean,
+    erpNumber: String,
+    brandName: String,
+    brandDetailPagePath: String,
+    styleParentId: ID,
+    id: ID,
+    image: String,
+    subtitle: String,
+    title: String,
+    url: String,
+    properties: [Property]
+}
+
+type AutocompleteContent {
+    uri: String,
+    id: ID,
+    image: String,
+    subtitle: String,
+    title: String,
+    url: String,
+    properties: [Property]
+}
+
+type AutocompleteBrand {
+    uri: String,
+    productLineName: String,
+    productLineId: ID,
+    id: ID,
+    image: String,
+    subtitle: String,
+    title: String,
+    url: String,
+    properties: [Property]
+}
+
+type Query {
+    autocomplete(query: String, categoryEnabled: Boolean, contentEnabled: Boolean, 
+    productEnabled: Boolean, brandEnabled: Boolean): AutoComplete
+}

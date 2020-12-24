@@ -1,0 +1,6 @@
+type PriceFacet {
+    minimumPrice: Int,
+    maximumPrice: Int,
+    count: Int,
+    selected: Boolean
+}
