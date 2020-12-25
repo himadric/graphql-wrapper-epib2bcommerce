@@ -46,3 +46,11 @@ For debugging code in VS Code, I have added launch.json with below configuration
 ```
 To run the application in VS Code, start a terminal and run the command 'npm run dev'. You can now open the GraphQL Playground in http://localhost:4000.
 
+### Running the application in Heroku
+Follow the below steps to deploy and run the application in Heroku
+* Clone the repository
+* Create an account in [Heroku](https://Heroku.com) if you do not have it already
+* Download [Heroku Cli](https://devcenter.heroku.com/articles/heroku-cli) if you do not have it already
+* Open the application in VS Code
+* Login to Heroku (command: heroku login). It will open up the browser for you to login
+* 
