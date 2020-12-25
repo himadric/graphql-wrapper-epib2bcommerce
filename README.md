@@ -20,10 +20,28 @@ The schemas for the endpoints are declared in sperate files in the typedefs fold
 #### Resolvers
 Resolvers are used to convert RestApi result from Insite to GraphQL query. For example, product.resolvers.ts fetches data from product by id RestApi (/api/v1/products/id) and return the result when product query is called. Resolvers are created to handle RestApi parameters. Insite APIs return custom properties as dynamic object. Since GraphQL is strongly typed, I have converted Insite custom properties to array of key/value pair.
 ### Debugging and troubleshooting in VS Code
-For running the application in VS Code, I used nodemon and VS Code node.js debugger. I installed the nodemon package as dev dependencies and below line of code in package.json to run the server in dev mode. This enable me to working on the code without restarting the application every time I changed code.
+For running the application in VS Code, I used nodemon and VS Code node.js debugger. I have installed the nodemon package as dev dependencies and below lines of code in package.json to run the server in dev mode. This enables me to work on the code without restarting the application every time I change code.
 ```Javascript
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "nodemon --exec ts-node index.ts"
   }
 ```
+For debugging code in VS Code, I have added launch.json with below configuration so that I can attach debugger to the process.
+```Javascript
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Node: Nodemon",
+            "processId": "${command:PickProcess}",
+            "restart": true,
+            "protocol": "inspector",
+        },
+    ]
+}
+
+```
+
