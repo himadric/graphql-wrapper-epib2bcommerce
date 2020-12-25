@@ -19,7 +19,7 @@ I have implemented GraphQL endpoints only for Insite Catalog APIs at this time. 
 The schemas for the endpoints are declared in sperate files in the typedefs folder. Schemas are broken in to smaller types in separate files and merged in index.ts. 
 #### Resolvers
 Resolvers are used to convert RestApi result from Insite to GraphQL query. For example, product.resolvers.ts fetches data from product by id RestApi (/api/v1/products/id) and return the result when product query is called. Resolvers are created to handle RestApi parameters. Insite APIs return custom properties as dynamic object. Since GraphQL is strongly typed, I have converted Insite custom properties to array of key/value pair.
-### Debugging and troubleshooting in VS Code
+### Running and debugging in VS Code
 For running the application in VS Code, I used nodemon and VS Code node.js debugger. I have installed the nodemon package as dev dependencies and below lines of code in package.json to run the server in dev mode. This enables me to work on the code without restarting the application every time I change code.
 ```Javascript
   "scripts": {
@@ -44,4 +44,5 @@ For debugging code in VS Code, I have added launch.json with below configuration
 }
 
 ```
+To run the application in VS Code, start a terminal and run the command 'npm run dev'. You can now open the GraphQL Playground in http://localhost:4000.
 
