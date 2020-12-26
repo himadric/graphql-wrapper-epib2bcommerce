@@ -55,14 +55,14 @@ Follow the below steps to deploy and run the application in Heroku
 * Open the application in VS Code.
 * Make sure you have git client intalled. If not [download](https://git-scm.com/) and install. 
 * Login to Heroku. It will open up the browser for you to login.
-** heroku login
+  * heroku login
 * Clone the repository to your local machine 
-** heroku git:clone -a graphql-wrapper-epib2bcommerce
+  * heroku git:clone -a graphql-wrapper-epib2bcommerce
 * Change directory 
-** cd graphql-wrapper-epib2bcommerce
+  * cd graphql-wrapper-epib2bcommerce
 * Deploy to Heroku using below commands
-** git add .
-** git commit -am "commit comment"
-** git push heroku master
+  * git add .
+  * git commit -am "commit comment"
+  * git push heroku master
 * Run the application with below command
-** heroku open
+  * heroku open
