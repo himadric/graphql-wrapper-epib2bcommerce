@@ -1,6 +1,6 @@
 {
     "RestApi": {
-        "baseUrl": "https://nishtech.insitesandbox.com"
+        "baseUrl": "Add your InsiteCommerce URL here."
     },
     "graphqlServer": {
         "port": 4000
