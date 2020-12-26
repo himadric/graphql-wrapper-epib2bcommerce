@@ -66,4 +66,5 @@ Follow the below steps to deploy and run the application in Heroku
   * git push heroku master
 * Run the application.
   * heroku open
+
 You can run GraphQL query now from the browser.
