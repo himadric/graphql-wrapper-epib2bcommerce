@@ -1,6 +1,6 @@
 {
     "RestApi": {
-        "baseUrl": "http://maintenancesupply.insitesandbox.com"
+        "baseUrl": "https://nishtech.insitesandbox.com"
     },
     "graphqlServer": {
         "port": 4000
